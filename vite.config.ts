@@ -4,13 +4,14 @@ import { viteSingleFile } from 'vite-plugin-singlefile';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 const isSingleFile = process.env.SINGLE_FILE === 'true';
+const isUnminified = process.env.UNMINIFIED === 'true';
 
 export default defineConfig({
   root: 'src',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
-    minify: 'terser',
+    minify: isUnminified ? false : 'terser',
     target: 'es2020',
     terserOptions: {
       compress: {
@@ -32,8 +33,11 @@ export default defineConfig({
           if (assetInfo.name?.endsWith('.svg')) {
             return 'assets/svg/[name][extname]';
           }
-          return 'assets/[name]-[hash][extname]';
-        }
+          // Remove hash in unminified mode for easier debugging
+          return isUnminified ? 'assets/[name][extname]' : 'assets/[name]-[hash][extname]';
+        },
+        entryFileNames: isUnminified ? 'assets/[name].js' : 'assets/[name]-[hash].js',
+        chunkFileNames: isUnminified ? 'assets/[name].js' : 'assets/[name]-[hash].js'
       }
     },
     // Don't inline SVGs so they can be changed after build

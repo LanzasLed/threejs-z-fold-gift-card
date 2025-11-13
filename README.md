@@ -33,9 +33,13 @@ bun install
 # Start development server
 bun run dev
 
-# Build for production (separate HTML/CSS/JS files)
+# Build for production (separate HTML/CSS/JS files, minified)
 bun run build
 # Output: dist/index.html + dist/assets/svg/*.svg (editable after build)
+
+# Build unminified for debugging (readable CSS/JS)
+bun run build:dev
+# Output: dist/assets/index.js + dist/assets/style.css (no hashes, unminified)
 
 # Build single-file version (all inlined, ~14MB)
 bun run build:single

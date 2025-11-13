@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "vite",
     "build": "bun run type-check && vite build",
+    "build:dev": "bun run type-check && UNMINIFIED=true vite build",
     "build:single": "bun run type-check && SINGLE_FILE=true vite build",
     "preview": "vite preview",
     "type-check": "tsc --noEmit"
