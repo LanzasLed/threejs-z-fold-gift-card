@@ -35,12 +35,26 @@ bun run dev
 
 # Build for production (separate HTML/CSS/JS files)
 bun run build
+# Output: dist/index.html + dist/assets/svg/*.svg (editable after build)
 
-# Build single-file version (all inlined)
+# Build single-file version (all inlined, ~14MB)
 bun run build:single
+# Output: dist/index.html (single file with SVGs embedded)
 ```
 
 Visit `http://localhost:5173` to view the card.
+
+---
+
+## 🎨 Customizing Card Designs
+
+After running `bun run build`, you can customize the card by editing the SVG files:
+
+- `dist/assets/svg/gift-card-top.svg` — Top panel design
+- `dist/assets/svg/gift-card-middle.svg` — Middle panel design
+- `dist/assets/svg/gift-card-bottom.svg` — Bottom panel design
+
+Simply replace these files with your own designs (same dimensions: 794×374.33px). The card will automatically load your custom textures without rebuilding.
 
 ---
 

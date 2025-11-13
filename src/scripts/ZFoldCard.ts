@@ -20,6 +20,11 @@ import {
 import { CardState, ICardConfig } from './types';
 import { lerp, easeInOutCubic, setupLighting } from './utils';
 
+// Import SVG textures as assets
+import topSvg from '../svg/gift-card-top.svg';
+import middleSvg from '../svg/gift-card-middle.svg';
+import bottomSvg from '../svg/gift-card-bottom.svg';
+
 /**
  * Z-Fold Gift Card - Three.js implementation
  * 
@@ -198,7 +203,7 @@ export class ZFoldCard {
     this.middlePanel = new Group();
     this.bottomPanelGroup = new Group();
 
-    const topTexture = textureLoader.load('/svg/gift-card-top.svg', () => this.onTextureLoad());
+    const topTexture = textureLoader.load(topSvg, () => this.onTextureLoad());
     topTexture.colorSpace = SRGBColorSpace;
     topTexture.anisotropy = this.renderer.capabilities.getMaxAnisotropy();
     topTexture.minFilter = 1006;
@@ -229,7 +234,7 @@ export class ZFoldCard {
     topBack.renderOrder = 3;
     this.topPanelGroup.add(topBack);
 
-    const middleTexture = textureLoader.load('/svg/gift-card-middle.svg', () => this.onTextureLoad());
+    const middleTexture = textureLoader.load(middleSvg, () => this.onTextureLoad());
     middleTexture.colorSpace = SRGBColorSpace;
     middleTexture.anisotropy = this.renderer.capabilities.getMaxAnisotropy();
     middleTexture.minFilter = 1006;
@@ -258,7 +263,7 @@ export class ZFoldCard {
     middleBack.renderOrder = 2;
     this.middlePanel.add(middleBack);
 
-    const bottomTexture = textureLoader.load('/svg/gift-card-bottom.svg', () => this.onTextureLoad());
+    const bottomTexture = textureLoader.load(bottomSvg, () => this.onTextureLoad());
     bottomTexture.colorSpace = SRGBColorSpace;
     bottomTexture.anisotropy = this.renderer.capabilities.getMaxAnisotropy();
     bottomTexture.minFilter = 1006;
