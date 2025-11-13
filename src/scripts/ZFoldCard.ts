@@ -28,13 +28,13 @@ import { lerp, easeInOutCubic, setupLighting } from './utils';
  */
 export class ZFoldCard {
   private state: CardState = CardState.FOLDED;
-  private scene: Scene;
-  private camera: PerspectiveCamera;
-  private renderer: WebGLRenderer;
-  private cardGroup: Group;
-  private topPanelGroup: Group;
-  private middlePanel: Group;
-  private bottomPanelGroup: Group;
+  private scene!: Scene;
+  private camera!: PerspectiveCamera;
+  private renderer!: WebGLRenderer;
+  private cardGroup!: Group;
+  private topPanelGroup!: Group;
+  private middlePanel!: Group;
+  private bottomPanelGroup!: Group;
   private config: ICardConfig;
   private isAnimating = false;
   private readonly PANEL_WIDTH = 794;
@@ -168,9 +168,6 @@ export class ZFoldCard {
     this.renderer.setClearColor(0x000000, 0); // Fully transparent background
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)); // Cap at 2x for performance
-    
-    // Enable physically correct lighting for realistic light attenuation
-    this.renderer.useLegacyLights = false; // Three.js r155+ physically correct by default
     
     // Set output color space to sRGB for accurate color reproduction
     this.renderer.outputColorSpace = SRGBColorSpace;

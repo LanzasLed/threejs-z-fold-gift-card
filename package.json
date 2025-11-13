@@ -16,6 +16,7 @@
     "esbuild": "^0.25.12",
     "esbuild-sass-plugin": "^3.3.1",
     "sass": "^1.93.3",
+    "terser": "^5.44.1",
     "vite": "^7.1.12",
     "vite-plugin-singlefile": "^2.3.0"
   },
