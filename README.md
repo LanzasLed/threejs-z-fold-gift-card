@@ -33,8 +33,11 @@ bun install
 # Start development server
 bun run dev
 
-# Build for production
+# Build for production (separate HTML/CSS/JS files)
 bun run build
+
+# Build single-file version (all inlined)
+bun run build:single
 ```
 
 Visit `http://localhost:5173` to view the card.
