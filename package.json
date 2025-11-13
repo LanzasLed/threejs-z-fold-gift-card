@@ -1,0 +1,30 @@
+{
+  "name": "js-z-fold-gift-card",
+  "version": "0.1.0",
+  "description": "Interactive Z-Fold Gift Card with 3D animations",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "bun run type-check && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "esbuild": "^0.25.12",
+    "esbuild-sass-plugin": "^3.3.1",
+    "sass": "^1.93.3",
+    "vite": "^7.1.12",
+    "vite-plugin-singlefile": "^2.3.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/three": "^0.181.0",
+    "motion": "^12.23.24",
+    "three": "^0.181.1"
+  }
+}
